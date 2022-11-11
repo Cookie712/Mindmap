@@ -1,0 +1,157 @@
+body {
+    background-color: #333;
+}
+#debug1 {
+    display: block;
+}
+.js-mindmap-active h1 {
+    display: none;
+}
+.js-mindmap-active section h1 {
+    display: block;
+}
+.js-mindmap-active .node {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    padding: 8px;
+    cursor: pointer;
+    cursor: hand;
+    z-index: 100;
+    list-style: none;
+
+    font: 30px/1.15 Arial, sans-serif;
+    font-size: 0.75em;
+    font-weight: bold;
+    letter-spacing: 0;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    background: #4688c2;
+    border: 4px solid white;
+    width: 75px;
+    height: 75px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    position: relative;
+}
+.js-mindmap-active .node.active {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    width: 150px;
+    height: 150px;
+    font-weight: bold;
+    padding: 8px !important;
+    border-width: 8px !important;
+    background: #f89a3a;
+}
+.js-mindmap-active .node.active {
+    color: white;
+}
+.js-mindmap-active .node.activeparent {
+    color: lightgray;
+    padding: 8px !important;
+    border-width: 8px !important;
+    background: #c64d44;
+}
+.js-mindmap-active .node div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+.js-mindmap-active .node span {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.js-mindmap-active img.line {
+    position: absolute;
+    width: 200px;
+    height: 133px;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: 0;
+}
+.ui-draggable {
+    position: absolute;
+}
+.js-mindmap-active .node .node-action {
+    position: absolute;
+    right: -2em;
+    bottom: -1px;
+    text-align: center;
+    vertical-align: super;
+}
+
+.js-mindmap-active .node.orange {
+    background: #f89a3a;
+}
+.js-mindmap-active .node.green {
+    background: #92c63d;
+}
+.js-mindmap-active .node.blue {
+    background: #4688c2;
+}
+.js-mindmap-active .node.purple {
+    background: #6b5ba6;
+}
+.js-mindmap-active .node.red {
+    background: #c64d44;
+}
+.js-mindmap-active .node.pink {
+    background: #ffc0cb;
+}
+
+.js-mindmap-active .node.size-10 {
+    width: 67.5px;
+    height: 67.5px;
+}
+.js-mindmap-active .node.size-20 {
+    width: 60px;
+    height: 60px;
+}
+.js-mindmap-active .node.size-30 {
+    width: 52.5%;
+    height: 52.5%;
+    font-size: 0.7em;
+}
+.js-mindmap-active .node.size-40 {
+    width: 45px;
+    height: 45px;
+    font-size: 0.7em;
+}
+.js-mindmap-active .node.size-50 {
+    width: 37.5px;
+    height: 37.5px;
+    font-size: 0.7em;
+}
+.js-mindmap-active .node.size25 {
+    width: 93.75px;
+    height: 93.75px;
+    font-size: 0.9375em;
+}
+.js-mindmap-active .node.size50 {
+    width: 112.5px;
+    height: 112.5px;
+    font-size: 1.125em;
+}
+.js-mindmap-active .node.size75 {
+    width: 131.25px;
+    height: 131.25px;
+    font-size: 1.3125em;
+}
+.js-mindmap-active .node.size100 {
+    width: 150px;
+    height: 150px;
+    font-size: 1.5em;
+}
+.js-mindmap-active .node.size200 {
+    width: 225px;
+    height: 225px;
+    font-size: 2.25em;
+}
